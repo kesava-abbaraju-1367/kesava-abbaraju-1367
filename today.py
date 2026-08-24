@@ -421,42 +421,48 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
 
 
 if __name__ == '__main__':
+    import traceback
     print('Calculation times:')
-    if not USER_NAME:
-        print("Error: USER_NAME environment variable not set.")
-        exit(1)
-    if not os.environ.get('ACCESS_TOKEN'):
-        print("Error: ACCESS_TOKEN environment variable not set.")
-        exit(1)
-
-    user_data, user_time = perf_counter(user_getter, USER_NAME)
-    OWNER_ID, acc_date = user_data
-    formatter('account data', user_time)
-
-    birthday_env = os.environ.get('USER_BIRTHDAY', '2000-01-01')
     try:
-        birthday_date = datetime.datetime.strptime(birthday_env, '%Y-%m-%d')
-    except ValueError:
-        birthday_date = datetime.datetime(2000, 1, 1)
+        if not USER_NAME:
+            print("Error: USER_NAME environment variable not set.")
+            exit(1)
+        if not os.environ.get('ACCESS_TOKEN'):
+            print("Error: ACCESS_TOKEN environment variable not set.")
+            exit(1)
 
-    age_data, age_time = perf_counter(daily_readme, birthday_date)
-    formatter('age calculation', age_time)
-    total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
-    formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
-    commit_data, commit_time = perf_counter(commit_counter, 7)
-    star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
-    repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
-    contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
-    follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
+        user_data, user_time = perf_counter(user_getter, USER_NAME)
+        OWNER_ID, acc_date = user_data
+        formatter('account data', user_time)
 
-    for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
+        birthday_env = os.environ.get('USER_BIRTHDAY', '2000-01-01')
+        try:
+            birthday_date = datetime.datetime.strptime(birthday_env, '%Y-%m-%d')
+        except ValueError:
+            birthday_date = datetime.datetime(2000, 1, 1)
 
-    svg_overwrite('dark_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
-    svg_overwrite('light_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+        age_data, age_time = perf_counter(daily_readme, birthday_date)
+        formatter('age calculation', age_time)
+        total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
+        formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
+        commit_data, commit_time = perf_counter(commit_counter, 7)
+        star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
+        repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
+        contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+        follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
 
-    print('\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F',
-        '{:<21}'.format('Total function time:'), '{:>11}'.format('%.4f' % (user_time + age_time + loc_time + commit_time + star_time + repo_time + contrib_time)),
-        ' s \033[E\033[E\033[E\033[E\033[E\033[E\033[E\033[E', sep='')
+        for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
 
-    print('Total GitHub GraphQL API calls:', '{:>3}'.format(sum(QUERY_COUNT.values())))
-    for funct_name, count in QUERY_COUNT.items(): print('{:<28}'.format('   ' + funct_name + ':'), '{:>6}'.format(count))
+        svg_overwrite('dark_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+        svg_overwrite('light_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+
+        print('\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F',
+            '{:<21}'.format('Total function time:'), '{:>11}'.format('%.4f' % (user_time + age_time + loc_time + commit_time + star_time + repo_time + contrib_time)),
+            ' s \033[E\033[E\033[E\033[E\033[E\033[E\033[E\033[E', sep='')
+
+        print('Total GitHub GraphQL API calls:', '{:>3}'.format(sum(QUERY_COUNT.values())))
+        for funct_name, count in QUERY_COUNT.items(): print('{:<28}'.format('   ' + funct_name + ':'), '{:>6}'.format(count))
+    except Exception as e:
+        print("\n!!! EXCEPTION CAUGHT IN MAIN !!!")
+        traceback.print_exc()
+        exit(1)
