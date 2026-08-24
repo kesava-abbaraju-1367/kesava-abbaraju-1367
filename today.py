@@ -414,7 +414,7 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
     Returns formatted result if whitespace is specified, otherwise returns raw result
     """
     print('{:<23}'.format('   ' + query_type + ':'), sep='', end='')
-    print('{:>12}'.format('%.4f' % difference + ' s ') if difference > 1 else print('{:>12}'.format('%.4f' % (difference * 1000) + ' ms'))
+    print('{:>12}'.format('%.4f' % difference + ' s ')) if difference > 1 else print('{:>12}'.format('%.4f' % (difference * 1000) + ' ms'))
     if whitespace:
         return f"{'{:,}'.format(funct_return): <{whitespace}}"
     return funct_return

@@ -16,34 +16,34 @@ size-adjust: 109%;
 text, tspan {white-space: pre;}
 </style>
 <rect width="985px" height="530px" fill="#161b22" rx="15"/>
-<text x="15" y="30" fill="#c9d1d9" class="ascii">
-<tspan x="15" y="30">.....,..,........,::::,.......,=+++?????++</tspan>
-<tspan x="15" y="50">,,,,,,,,.,,...:~+$O8ZOZZ7+:..,,~++???????+</tspan>
-<tspan x="15" y="70">,,,,,.,,,,,,.~Z8DMMMNNNND8O?,,:~+?????????</tspan>
-<tspan x="15" y="90">,,,,,..,==.,=$DMND888DNMMNDDZ=:+???????I??</tspan>
-<tspan x="15" y="110">,,,.:,::=?=,IDMN7===+II$8NMND?=??I????I???</tspan>
-<tspan x="15" y="130">.,::::=+?+?=?8DO~,~=+????OMNO=?+?IIIIII7?+</tspan>
-<tspan x="15" y="150">,::==,=~I$I77ZDO+7Z$I7OOZZNN$+??I?II?I7$I?</tspan>
-<tspan x="15" y="170">,~,:?=II7$$OZ7O$78NOIOND8Z88?????IIIII?77I</tspan>
-<tspan x="15" y="190">~:~I77$7O$$ZZ$I?+I7=~?$$7I$ZI?IIIIII777I$$</tspan>
-<tspan x="15" y="210">+?$$$7I8O7$8Z$I+?7I7ZZZZ77$7$$$$777$$7$Z$$</tspan>
-<tspan x="15" y="230">??7Z7?$OOZZO$7$Z$O8ZZODNOO8$$ZZZ$Z$7$7$$7Z</tspan>
-<tspan x="15" y="250">IIIZ$$Z$OOZZO88OZZ$I7$Z88DOZOOO$ZOO$ZZ$Z$Z</tspan>
-<tspan x="15" y="270">$7ZOZO8Z$OZZO8$?O8$$8OO8NOZ8DDOO8NDOOZZ8O7</tspan>
-<tspan x="15" y="290">O$ZOOOZZOOO8D7.+I$DDNNNNOI~8DDD88D88OZO$$O</tspan>
-<tspan x="15" y="310">88OOZO8O88$I+. ~I?7O88OOZ?,:$ODDNDOO8OOOOO</tspan>
-<tspan x="15" y="330">OOOOOO$I=:..  .~7$77$$ZO7:,,,,~?$OOOO8D88O</tspan>
-<tspan x="15" y="350">Z$8Z+,...,..,:+++?$777I+~+:,,:,,..:=7O8OZZ</tspan>
-<tspan x="15" y="370">$7~...,,::..,:,~~~=??=~=?I?=:::::,,..,~788</tspan>
-<tspan x="15" y="390">7: ..~,,~,..,,.,::,=++?++==~:::::~:::,,,ID</tspan>
-<tspan x="15" y="410">?..,:=,,:.,::,...,==~=~~~~::::::~::~::~,+D</tspan>
-<tspan x="15" y="430">:.,::~,,,:~:,,,.,~=~:::::::~~:::::~=::~:~7</tspan>
-<tspan x="15" y="450">.,,::::~:=:,,,,,,~~:::,:::~:~::::~~~~~~~:=</tspan>
-<tspan x="15" y="470">.,,:=::=:~~::,,,:,~~::,:~:::::::~~~~==~~~~:</tspan>
-<tspan x="15" y="490">.:~=~~=~~::,,,:~,~=~::~=::~~:::~~=~==~=~~:</tspan>
-<tspan x="15" y="510">.:~=~~+~~::,,::~:~~::~=:,:~~:~~~===+===~~:</tspan>
+<text x="15" y="30" fill="#c9d1d9" class="ascii" font-family="monospace">
+<tspan x="15" y="30">....,.........,:::,.....,~++????++</tspan>
+<tspan x="15" y="50">,,,,,,..,..,~?Z8OOZ$?:.,,~++?????+</tspan>
+<tspan x="15" y="70">,,,,.,,,,,,78DMMMNND8O=,,~+???????</tspan>
+<tspan x="15" y="90">,,,,..~=.,?8MND88DNMNDDI:+????????</tspan>
+<tspan x="15" y="110">,,,,,:~?=:ZMNI==+I7ONMN$=?II???I??</tspan>
+<tspan x="15" y="130">.,::~+?+?=$NO::=+???ZMNI+??IIII7I+</tspan>
+<tspan x="15" y="150">,:~=:==$I7$DO?$$I$OZZNDI+?III?I$7?</tspan>
+<tspan x="15" y="170">,:,++II$$O$Z$$DDIONDZ8Z???IIIIII7I</tspan>
+<tspan x="15" y="190">~:+777ZZ$ZZ7?+7?~I$$I$$?IIIII7777$</tspan>
+<tspan x="15" y="210">+I$$778$Z8$7+I7IZZZ$7$7$$$777$7Z$$</tspan>
+<tspan x="15" y="230">?I$7?$OZZO77Z$8OZOD8OO$ZZ$$Z7$7$7$</tspan>
+<tspan x="15" y="250">II$$ZZZ8ZO88OZZI7$O8DOZOO$ZOZZZZZZ</tspan>
+<tspan x="15" y="270">$7OZO8$OZZ8OIOO7OOON8Z8DOODNOOZOO7</tspan>
+<tspan x="15" y="290">O$ZOOZOOO88:=IODNNNDI=DDD8D88OOZ$Z</tspan>
+<tspan x="15" y="310">8OOZO888$I: ~I?Z88OOI,=ZDDN8O8OOOO</tspan>
+<tspan x="15" y="330">OOOOO$+~.  .~$77$$ZZ~,,,:?$OOODD8O</tspan>
+<tspan x="15" y="350">$ZO?,..,..,=?+I777I==:,:,,.,~IO8OZ</tspan>
+<tspan x="15" y="370">$I. .,,:..:,~~~??~~?I?~::::,..,=O8</tspan>
+<tspan x="15" y="390">I...~,::.,,..:,~++?+==~:::::::,.+D</tspan>
+<tspan x="15" y="410">+.,:~,:.,:,...:=~=~:~:::::~:~~:::8</tspan>
+<tspan x="15" y="430">,.::~,,,~:,,.,~~::::::~~::::~~:~:I</tspan>
+<tspan x="15" y="450">.,:::~:=:,,,,,~~::,::~:~:::~~~~~:=</tspan>
+<tspan x="15" y="470">.:~:~=:=::,,:,~::,:~::~::~~~==~~~:</tspan>
+<tspan x="15" y="490">.:~~~=~~:,,:::~~::~::~~::~=~====~:</tspan>
+<tspan x="15" y="510">,:=~~=:~:,,:~:~~:~=,:~~:~~=====~~:</tspan>
 </text>
-<text x="390" y="30" fill="#c9d1d9">
+<text x="390" y="30" fill="#c9d1d9" font-family="monospace">
 <tspan x="390" y="30">kesava-abbaraju-1367</tspan> -———————————————————————————————————————————-—-
 <tspan x="390" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">Windows 11 / Linux</tspan>
 <tspan x="390" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ...................... </tspan><tspan class="value" id="age_data">0 years, 0 months, 0 days</tspan>
