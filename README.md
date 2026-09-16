@@ -131,15 +131,21 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 
 <div align="center">
 
-## `~/` 🎮 tic-tac-toe
+## `~/` 🎮 instant tic-tac-toe vs ai bot
 
-| | | |
-| :-: | :-: | :-: |
-| ❌ | ⭕ | ❌ |
-| ⭕ | ❌ | ⭕ |
-| ❌ | ⭕ | ❌ |
+<a href="https://htmlpreview.github.io/?https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/blob/main/index.html">
+  <img src="https://img.shields.io/badge/PLAY_NOW-INSTANT_TIC--TAC--TOE_VS_BOT-39D353?style=for-the-badge&logo=gamepad&logoColor=black" alt="Play Live Arcade Game">
+</a>
 
-<sub><i>Classic 3x3 Terminal Grid</i></sub>
+<br><br>
+
+<a href="https://htmlpreview.github.io/?https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/blob/main/index.html">
+  <img src="assets/winner-animation.svg" width="85%" alt="Play Live Arcade Game">
+</a>
+
+<br>
+
+<sub><i>⚡ Zero tickets or forms! Click <b>PLAY NOW</b> to launch instant sound & confetti gameplay in 1 click!</i></sub>
 
 </div>
 

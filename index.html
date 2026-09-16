@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kesava's Arcade — Tic-Tac-Toe vs AI Bot</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --accent: #39d353;
+      --accent-blue: #38bdf8;
+      --text: #c9d1d9;
+      --border: #30363d;
+      --grid-gap: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      color: var(--accent);
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    p.subtitle {
+      color: #8b949e;
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    .scoreboard {
+      display: flex;
+      justify-content: space-around;
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 24px;
+    }
+
+    .score-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .score-title { font-size: 0.75rem; color: #8b949e; text-transform: uppercase; }
+    .score-val { font-size: 1.4rem; font-weight: bold; color: #fff; margin-top: 4px; }
+    .score-box.player .score-val { color: var(--accent); }
+    .score-box.bot .score-val { color: var(--accent-blue); }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--grid-gap);
+      margin-bottom: 24px;
+    }
+
+    .cell {
+      background: #21262d;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .cell:hover:not(.occupied) {
+      background: #30363d;
+      border-color: var(--accent);
+      transform: scale(1.03);
+    }
+
+    .cell.x { color: var(--accent); }
+    .cell.o { color: var(--accent-blue); }
+    .cell.occupied { cursor: not-allowed; }
+
+    .status-banner {
+      font-size: 1rem;
+      font-weight: bold;
+      min-height: 28px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #0d1117;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .back-link:hover { color: var(--accent); text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎮 TIC-TAC-TOE VS AI BOT</h1>
+    <p class="subtitle">Play instant rounds against Kesava's AI Bot!</p>
+
+    <div class="scoreboard">
+      <div class="score-box player">
+        <span class="score-title">YOU (❌)</span>
+        <span class="score-val" id="score-user">0</span>
+      </div>
+      <div class="score-box">
+        <span class="score-title">DRAWS</span>
+        <span class="score-val" id="score-draw">0</span>
+      </div>
+      <div class="score-box bot">
+        <span class="score-title">BOT (⭕)</span>
+        <span class="score-val" id="score-bot">0</span>
+      </div>
+    </div>
+
+    <div class="status-banner" id="status">Your turn! Click any square to place ❌</div>
+
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <button class="btn" onclick="resetBoard()">🔄 Restart Game</button>
+
+    <a href="https://github.com/kesava-abbaraju-1367" class="back-link">← Back to Kesava's GitHub Profile</a>
+  </div>
+
+  <script>
+    let board = ["", "", "", "", "", "", "", "", ""];
+    let gameOver = false;
+    let scores = { user: 0, bot: 0, draw: 0 };
+
+    const boardEl = document.getElementById("board");
+    const cells = document.querySelectorAll(".cell");
+    const statusEl = document.getElementById("status");
+
+    // Audio synth for retro game sounds
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    function playBeep(freq, type = 'sine', duration = 0.1) {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = type;
+      osc.frequency.value = freq;
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      gain.gain.exponentialRampToValueAtTime(0.00001, audioCtx.currentTime + duration);
+      osc.stop(audioCtx.currentTime + duration);
+    }
+
+    const WINNING_COMBOS = [
+      [0,1,2], [3,4,5], [6,7,8],
+      [0,3,6], [1,4,7], [2,5,8],
+      [0,4,8], [2,4,6]
+    ];
+
+    cells.forEach(cell => {
+      cell.addEventListener("click", () => {
+        const index = parseInt(cell.dataset.index);
+        if (board[index] === "" && !gameOver) {
+          makeMove(index, "❌");
+          playBeep(523.25, 'square', 0.1); // C5 note
+
+          if (!checkGameStatus()) {
+            statusEl.textContent = "🤖 Bot is thinking...";
+            setTimeout(botMove, 400);
+          }
+        }
+      });
+    });
+
+    function makeMove(index, player) {
+      board[index] = player;
+      cells[index].textContent = player;
+      cells[index].classList.add("occupied", player.toLowerCase());
+    }
+
+    function botMove() {
+      if (gameOver) return;
+      
+      let bestMove = getBestMove();
+      if (bestMove !== null) {
+        makeMove(bestMove, "⭕");
+        playBeep(329.63, 'sawtooth', 0.12); // E4 note
+        checkGameStatus();
+      }
+    }
+
+    function getBestMove() {
+      // 1. Can Bot win?
+      for (let i = 0; i < 9; i++) {
+        if (board[i] === "") {
+          board[i] = "⭕";
+          if (checkWin("⭕")) { board[i] = ""; return i; }
+          board[i] = "";
+        }
+      }
+      // 2. Can User win? Block!
+      for (let i = 0; i < 9; i++) {
+        if (board[i] === "") {
+          board[i] = "❌";
+          if (checkWin("❌")) { board[i] = ""; return i; }
+          board[i] = "";
+        }
+      }
+      // 3. Center
+      if (board[4] === "") return 4;
+      // 4. Corners
+      const corners = [0, 2, 6, 8].filter(i => board[i] === "");
+      if (corners.length > 0) return corners[Math.floor(Math.random() * corners.length)];
+      // 5. Any open space
+      const empty = board.map((val, idx) => val === "" ? idx : null).filter(val => val !== null);
+      return empty.length > 0 ? empty[Math.floor(Math.random() * empty.length)] : null;
+    }
+
+    function checkWin(player) {
+      return WINNING_COMBOS.some(combo => combo.every(idx => board[idx] === player));
+    }
+
+    function checkGameStatus() {
+      if (checkWin("❌")) {
+        gameOver = true;
+        scores.user++;
+        document.getElementById("score-user").textContent = scores.user;
+        statusEl.innerHTML = "🎉 🏆 <b>VICTORY! YOU WIN!</b> 🎉";
+        playBeep(880, 'sine', 0.3); // High A5 note
+        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        return true;
+      }
+      if (checkWin("⭕")) {
+        gameOver = true;
+        scores.bot++;
+        document.getElementById("score-bot").textContent = scores.bot;
+        statusEl.innerHTML = "🤖 <b>BOT WON THIS ROUND!</b>";
+        playBeep(220, 'sawtooth', 0.3); // Low note
+        return true;
+      }
+      if (board.every(cell => cell !== "")) {
+        gameOver = true;
+        scores.draw++;
+        document.getElementById("score-draw").textContent = scores.draw;
+        statusEl.innerHTML = "🤝 <b>IT'S A DRAW!</b>";
+        return true;
+      }
+      statusEl.textContent = "Your turn! Click any square to place ❌";
+      return false;
+    }
+
+    function resetBoard() {
+      board = ["", "", "", "", "", "", "", "", ""];
+      gameOver = false;
+      cells.forEach(cell => {
+        cell.textContent = "";
+        cell.className = "cell";
+      });
+      statusEl.textContent = "Your turn! Click any square to place ❌";
+    }
+  </script>
+</body>
+</html>
