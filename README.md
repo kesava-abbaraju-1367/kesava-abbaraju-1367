@@ -129,26 +129,25 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 
 </div>
 
-<!-- TICTACTOE_BOARD_START -->
 <div align="center">
 
-## `~/` 🎮 tic-tac-toe (play against bot!)
+## `~/` 🎮 instant tic-tac-toe vs ai bot
 
+<a href="https://kesava-abbaraju-1367.github.io/kesava-abbaraju-1367/">
+  <img src="https://img.shields.io/badge/PLAY_NOW-INSTANT_TIC--TAC--TOE_VS_BOT-39D353?style=for-the-badge&logo=gamepad&logoColor=black" alt="Play Live Arcade Game">
+</a>
 
-🎮 *Your turn! Click an empty square (⬜) to place your move ❌!*
+<br><br>
 
-| | | |
-| :-: | :-: | :-: |
-| ❌ | ❌ | ⭕ |
-| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C4&body=Click+%22Submit+new+issue%22+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C5&body=Click+%22Submit+new+issue%22+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C6&body=Click+%22Submit+new+issue%22+to+make+this+move!">⬜</a> |
-| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C7&body=Click+%22Submit+new+issue%22+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C8&body=Click+%22Submit+new+issue%22+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C9&body=Click+%22Submit+new+issue%22+to+make+this+move!">⬜</a> |
+<a href="https://kesava-abbaraju-1367.github.io/kesava-abbaraju-1367/">
+  <img src="assets/winner-animation.svg" width="85%" alt="Play Live Arcade Game">
+</a>
 
 <br>
 
-<a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Creset&body=Click+%22Submit+new+issue%22+to+reset+the+game!">🔄 **Reset / Play Again**</a>
+<sub><i>⚡ Zero tickets or forms! Click <b>PLAY NOW</b> to launch instant sound & confetti gameplay in your browser!</i></sub>
 
 </div>
-<!-- TICTACTOE_BOARD_END -->
 
 ---
 
