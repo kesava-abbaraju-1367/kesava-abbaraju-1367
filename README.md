@@ -42,6 +42,14 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 <br>
 
 <div align="center">
+  <a href="https://github.com/shravan20/github-readme-quotes">
+    <img src="https://github-readme-quotes.vercel.app/api?theme=tokyonight&quote_type=random" alt="Daily Dev Quote" width="75%">
+  </a>
+</div>
+
+<br>
+
+<div align="center">
 
 ## `~/` toolbox
 
@@ -119,11 +127,31 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 
 <br>
 
+<a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kesava-abbaraju-1367&theme=tokyonight&hide_border=true&border_radius=8" alt="GitHub Streak Stats" />
+</a>
+
+<br><br>
+
 <img src="assets/metrics.languages.svg" height="165" alt="most used languages">
 
 <br><br>
 
 <img src="assets/metrics.achievements.svg" width="90%" alt="achievements">
+
+</div>
+
+<div align="center">
+
+## `~/` 🎮 tic-tac-toe
+
+| | | |
+| :-: | :-: | :-: |
+| ❌ | ⭕ | ❌ |
+| ⭕ | ❌ | ⭕ |
+| ❌ | ⭕ | ❌ |
+
+<sub><i>Classic 3x3 Grid Challenge</i></sub>
 
 </div>
 
