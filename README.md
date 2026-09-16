@@ -133,13 +133,13 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 
 ## `~/` 🎮 instant tic-tac-toe vs ai bot
 
-<a href="https://kesava-abbaraju-1367.github.io/kesava-abbaraju-1367/">
+<a href="https://kesava-abbaraju-1367.github.io/">
   <img src="https://img.shields.io/badge/PLAY_NOW-INSTANT_TIC--TAC--TOE_VS_BOT-39D353?style=for-the-badge&logo=gamepad&logoColor=black" alt="Play Live Arcade Game">
 </a>
 
 <br><br>
 
-<a href="https://kesava-abbaraju-1367.github.io/kesava-abbaraju-1367/">
+<a href="https://kesava-abbaraju-1367.github.io/">
   <img src="assets/winner-animation.svg" width="85%" alt="Play Live Arcade Game">
 </a>
 
