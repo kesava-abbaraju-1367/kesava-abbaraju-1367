@@ -178,7 +178,7 @@ def main():
   <img src="assets/winner-animation.svg" width="85%" alt="Winner Animation">
 </a>
 <br>
-<h3>🎉 🏆 <b>YOU BEAT THE BOT! CONGRATULATIONS!</b> 🏆 🎉</h3>
+<h3>🎉 🏆 <b>VICTORY! CONGRATULATIONS!</b> 🏆 🎉</h3>
 """
     elif result == "DRAW":
         status_msg = "<h3>🤝 <b>IT'S A DRAW! GREAT GAME!</b> 🤝</h3>"

@@ -65,11 +65,7 @@
   </g>
 
   <!-- Winner Text -->
-  <text x="310" y="65" font-family="'JetBrains Mono', 'Segoe UI', monospace" font-size="26" font-weight="bold" fill="url(#gold-grad)" text-anchor="middle" filter="url(#glow)">
-    VICTORY! YOU WIN!
-  </text>
-  
-  <text x="310" y="100" font-family="'JetBrains Mono', 'Segoe UI', monospace" font-size="14" fill="#a7f3d0" text-anchor="middle">
-    🎉 YOU BEAT THE AI BOT IN TIC-TAC-TOE 🎉
+  <text x="310" y="85" font-family="'JetBrains Mono', 'Segoe UI', monospace" font-size="26" font-weight="bold" fill="url(#gold-grad)" text-anchor="middle" filter="url(#glow)">
+    🎉 VICTORY! YOU WIN! 🎉
   </text>
 </svg>
