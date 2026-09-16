@@ -42,8 +42,8 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 <br>
 
 <div align="center">
-  <a href="https://github.com/shravan20/github-readme-quotes">
-    <img src="https://github-readme-quotes.vercel.app/api?theme=tokyonight&quote_type=random" alt="Daily Dev Quote" width="75%">
+  <a href="https://github.com/kesava-abbaraju-1367">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=4000&pause=2000&color=39D353&center=true&vCenter=true&width=650&lines=%22Talk+is+cheap.+Show+me+the+code.%22+-+Linus+Torvalds;%22First%2C+solve+the+problem.+Then%2C+write+the+code.%22+-+John+Johnson;%22Simplicity+is+prerequisite+for+reliability.%22+-+Edsger+W.+Dijkstra;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22+-+Kent+Beck" alt="Developer Quotes">
   </a>
 </div>
 
@@ -96,11 +96,6 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 
 ## `~/` contribution calendar
 
-<!-- 3D isometric calendar, regenerated every 6h by .github/workflows/metrics.yml -->
-<img src="assets/metrics.isocalendar.svg" width="90%" alt="3D isometric contribution calendar">
-
-<br><br>
-
 <!-- Snake eats the contribution graph - .github/workflows/snake.yml -->
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kesava-abbaraju-1367/kesava-abbaraju-1367/output/snake-dark.svg">
@@ -131,13 +126,6 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=kesava-abbaraju-1367&theme=tokyonight&hide_border=true&border_radius=8" alt="GitHub Streak Stats" />
 </a>
 
-<br><br>
-
-<img src="assets/metrics.languages.svg" height="165" alt="most used languages">
-
-<br><br>
-
-<img src="assets/metrics.achievements.svg" width="90%" alt="achievements">
 
 </div>
 
@@ -147,11 +135,11 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 
 | | | |
 | :-: | :-: | :-: |
-| ❌ | ⭕ | ❌ |
-| ⭕ | ❌ | ⭕ |
-| ❌ | ⭕ | ❌ |
+| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C1&body=Click+Submit+new+issue+to+place+your+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C2&body=Click+Submit+new+issue+to+place+your+move!">❌</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C3&body=Click+Submit+new+issue+to+place+your+move!">⭕</a> |
+| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C4&body=Click+Submit+new+issue+to+place+your+move!">⭕</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C5&body=Click+Submit+new+issue+to+place+your+move!">❌</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C6&body=Click+Submit+new+issue+to+place+your+move!">⬜</a> |
+| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C7&body=Click+Submit+new+issue+to+place+your+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C8&body=Click+Submit+new+issue+to+place+your+move!">⭕</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C9&body=Click+Submit+new+issue+to+place+your+move!">❌</a> |
 
-<sub><i>Classic 3x3 Grid Challenge</i></sub>
+<sub><i>Click on any empty cell (⬜) to place your move!</i></sub>
 
 </div>
 
