@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="150" viewBox="0 0 600 150">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="50%" stop-color="#203a43"/>
+      <stop offset="100%" stop-color="#2c5364"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .confetti {
+        animation: floatDown 3s ease-in-out infinite alternate;
+      }
+      .confetti-1 { fill: #ef4444; animation-delay: 0s; }
+      .confetti-2 { fill: #3b82f6; animation-delay: 0.4s; }
+      .confetti-3 { fill: #10b981; animation-delay: 0.8s; }
+      .confetti-4 { fill: #f59e0b; animation-delay: 1.2s; }
+      .confetti-5 { fill: #8b5cf6; animation-delay: 1.6s; }
+
+      @keyframes floatDown {
+        0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(20px) rotate(45deg); opacity: 0.8; }
+      }
+
+      .trophy-bounce {
+        animation: bounce 1.5s ease-in-out infinite;
+      }
+
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="600" height="150" rx="16" fill="url(#bg-grad)" stroke="#39d353" stroke-width="2"/>
+
+  <!-- Confetti Pieces -->
+  <circle cx="50" cy="30" r="6" class="confetti confetti-1"/>
+  <rect x="120" y="25" width="8" height="8" rx="2" class="confetti confetti-2"/>
+  <polygon points="200,20 208,35 192,35" class="confetti confetti-3"/>
+  <circle cx="480" cy="35" r="7" class="confetti confetti-4"/>
+  <rect x="530" y="20" width="10" height="10" rx="2" class="confetti confetti-5"/>
+  <circle cx="300" cy="20" r="5" class="confetti confetti-2"/>
+  <polygon points="400,25 408,40 392,40" class="confetti confetti-1"/>
+
+  <!-- Trophy Icon -->
+  <g class="trophy-bounce" transform="translate(45, 45)">
+    <path d="M 12 0 L 28 0 L 28 16 C 28 22 22 28 16 28 C 10 28 4 22 4 16 L 4 0 Z" fill="url(#gold-grad)" filter="url(#glow)"/>
+    <path d="M 0 4 L 4 4 L 4 12 C 4 16 0 16 0 12 Z" fill="#f59e0b"/>
+    <path d="M 32 4 L 28 4 L 28 12 C 28 16 32 16 32 12 Z" fill="#f59e0b"/>
+    <rect x="12" y="28" width="8" height="8" fill="#d97706"/>
+    <rect x="8" y="36" width="16" height="4" rx="2" fill="#b45309"/>
+  </g>
+
+  <!-- Winner Text -->
+  <text x="310" y="65" font-family="'JetBrains Mono', 'Segoe UI', monospace" font-size="26" font-weight="bold" fill="url(#gold-grad)" text-anchor="middle" filter="url(#glow)">
+    VICTORY! YOU WIN!
+  </text>
+  
+  <text x="310" y="100" font-family="'JetBrains Mono', 'Segoe UI', monospace" font-size="14" fill="#a7f3d0" text-anchor="middle">
+    🎉 YOU BEAT THE AI BOT IN TIC-TAC-TOE 🎉
+  </text>
+</svg>

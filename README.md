@@ -129,19 +129,25 @@ Hi, I'm **Kesava**. I build backend applications, automate workflows, and explor
 
 </div>
 
+<!-- TICTACTOE_BOARD_START -->
 <div align="center">
 
-## `~/` 🎮 tic-tac-toe
+## `~/` 🎮 tic-tac-toe (play against bot!)
+
+🎮 *Click any empty square (⬜) to place your move ❌!*
 
 | | | |
 | :-: | :-: | :-: |
-| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C1&body=Click+Submit+new+issue+to+place+your+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C2&body=Click+Submit+new+issue+to+place+your+move!">❌</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C3&body=Click+Submit+new+issue+to+place+your+move!">⭕</a> |
-| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C4&body=Click+Submit+new+issue+to+place+your+move!">⭕</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C5&body=Click+Submit+new+issue+to+place+your+move!">❌</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C6&body=Click+Submit+new+issue+to+place+your+move!">⬜</a> |
-| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C7&body=Click+Submit+new+issue+to+place+your+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C8&body=Click+Submit+new+issue+to+place+your+move!">⭕</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7C9&body=Click+Submit+new+issue+to+place+your+move!">❌</a> |
+| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C1&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C2&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C3&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> |
+| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C4&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C5&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C6&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> |
+| <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C7&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C8&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> | <a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Cmove%7C9&body=Click+Submit+new+issue+to+make+this+move!">⬜</a> |
 
-<sub><i>Click on any empty cell (⬜) to place your move!</i></sub>
+<br>
+
+<a href="https://github.com/kesava-abbaraju-1367/kesava-abbaraju-1367/issues/new?title=tictactoe%7Creset&body=Click+Submit+new+issue+to+reset+the+game!">🔄 **Reset / Play Again**</a>
 
 </div>
+<!-- TICTACTOE_BOARD_END -->
 
 ---
 
